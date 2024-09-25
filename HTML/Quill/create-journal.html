@@ -14,7 +14,25 @@
         <label for="main-title">Journal Title</label>
         <input id="main-title" type="text" name="title" placeholder="Enter title">
 
-        <!-- This is used for writing text in an textbox area, label for should be the same as the name-->
+        <!-- This makes the labels appear under each other Use CSS Later-->
+        <br>
+        
+        <!-- This is used for dropdowns, value is what should be stored by the DB/server, the options are all the dropdown options -->
+        <label for="journal-category">Journal Category</label>
+        <select id="journal-category" name="category">
+            <option value="idea">Idea</option>
+            <option value="note">Note</option>
+            <option value="goal">Goal</option>
+            <option value="habit">Habit</option>
+            <option value="memory">Memory</option>
+            <option value="mood">Mood</option>
+            <option value="event">Event</option>
+            <option value="task">Task</option>
+        </select>
+
+        <br>
+        <!-- This is used for writing text in an textbox area, label for should be the same as the name, this is a self closing tag, 
+         therefore you do not have to put starter text it will appear in the textarea-->
         <label for="journal-entry">Journal Entry</label>
         <textarea id="journal-entry" name="entry" cols="30" rows="5"></textarea>
 
