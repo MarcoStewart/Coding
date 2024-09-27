@@ -1,12 +1,74 @@
+<!-- Used the boilerplate and added a title -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richfield Feedback</title>
+    <title>Richfield Campus Visit Feedback</title>
 </head>
 <body>
-    <h1>Richfield</h1>
+    <!-- Used an image to display logo -->
+
+    <img src="Images/Richfieldlogo.png" alt="richfield-logo">
+
+    <h1>Richfield Campus Visit Feedback</h1>
+    <form action="submit_feedback.php" method="post">
+    
+    <!-- User will enter name and surname, used a line break to make it display neater -->
+    <label for="name">Name:</label> <br> 
+    <input type="text" name="name" id="name"> <br>
+    
+    <label for="surname">Surname:</label> <br>
+    <input type="text" name="surname" id="surname">
+    
+    <!-- Below was used to add the checkbox -->
+    <h2>What did you like most about the campus?</h2>
+
+    <input type="checkbox" name="campus" id="campus">
+    <label for="campus">Campus</label>
+
+    <input type="checkbox" name="students" id="students">
+    <label for="students">Students</label>
+
+    <input type="checkbox" name="location" id="location">
+    <label for="location">Location</label>
+
+    <input type="checkbox" name="atmosphere" id="atmosphere">
+    <label for="atmosphere">Atmosphere</label>
+
+    <input type="checkbox" name="dorm-rooms" id="dorm-rooms">
+    <label for="dorm-rooms">Dorm Rooms</label>
+
+    <input type="checkbox" name="sports" id="sports">
+    <label for="sports">Sports</label>
+
+    <!-- Below was ysed to add the radio buttons, used the same name source for all buttons-->
+    <h2>How did you become interested in Richfield?</h2>
+    
+    
+    <input type="radio" name="source" id="friends" value="friends">
+    <label for="friends">Friends</label>
+    
+    <input type="radio" name="source" id="television" value="television">
+    <label for="television">Television</label>
+    
+    <input type="radio" name="source" id="internet" value="internet">
+    <label for="internet">Internet</label>
+    
+    <input type="radio" name="source" id="other">
+    <label for="other">Other</label>
+    
+    <!-- Used a text area tag to allow user to enter additional comments -->
+    <h3>Additional Comments</h3>
+    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+    <br>
+    <br>
+    <!-- Adding the buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+    </form>
     
 </body>
 </html>
