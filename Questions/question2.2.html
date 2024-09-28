@@ -4,49 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lists</title>
+    <style>
+        /* Underline Lecturer Names heading */
+        h1#lecturer-names {
+            text-decoration: underline;
+        }
+        /* Make Campus heading red */
+        h1#campus-heading {
+          color: red;
+        }
+        /* Changes heading colour */
+        h1#registration-date {
+          color: slategray;
+        }
+        ol#registration-date-list{
+          list-style-type: lower-roman;
+        }
+        /* changes list style */
+        ul#department-list {
+          list-style: circle;
+        }
+        /* Changes list style */
+        ol#it-specialization {
+          list-style: upper-alpha;
+        }
+        /* adds a background to the entire webpage */
+        body {
+          background-color: yellow;
+        }
+    </style>
 </head>
 <body>
-    <h1>Lecturer Names</h1>
-    <!-- Used an unordered lists for lecturers names -->
+    <h1 id="lecturer-names">Lecturer Names</h1>
+    <!-- Used an unordered list for lecturer names -->
      <ul>
         <li>Jane Sebolai</li>
         <li>Unity Melani</li>
         <li>Mathapelo Muchumayiri</li>
      </ul>
 
-     <br>
-
      <h1>Department</h1>
-     <!-- Used unordered lists for the departments -->
-     <ul>
+     <!-- Used unordered circle lists for the departments -->
+     <ul id="department-list">
         <li>MICT</li>
         <li>MICT</li>
         <li>BEMS</li>
      </ul>
 
-     <br>
-
      <h1>IT Specialization</h1>
      <!-- Used ordered lists for IT Specialization -->
-      <ol>
+      <ol id="it-specialization">
         <li>Network</li>
         <li>Internet programming</li>
         <li>Programming</li>
       </ol>
 
-      <br>
-
-      <h1>Registration Date</h1>
+      <h1 id="registration-date">Registration Date</h1>
       <!-- Ordered lists for Registration date -->
-      <ol>
+      <ol id="registration-date-list">
         <li>2023</li>
         <li>2024</li>
         <li>2025</li>
       </ol>
 
-      <br>
-
-      <h1>Campus</h1>
+      <h1 id="campus-heading">Campus</h1>
       <!-- Ordered list for Campuses -->
       <ol>
         <li>Newtown Campus</li>
