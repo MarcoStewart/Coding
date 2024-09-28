@@ -7,7 +7,9 @@
 </head>
 <body>
     <table>
+        <!-- thead is used to store the headings -->
         <thead>
+            <!-- tr tag is used to create a row, th tag is used to add headings -->
             <tr>
                 <th>Event</th>
                 <th>Fight</th>
@@ -16,38 +18,36 @@
                 <th>PPV</th>
             </tr>
         </thead>
+        <!-- tbody is used to store all the content of the table -->
         <tbody>
             <tr>
+                <!-- TD stores each cell of data, rowspan makes a cell span over other rows, good for duplicated fields that repeated on multiple rows -->
                 <td>UFC 189</td>
                 <td>Mendes vs. McGregor</td>
-                <td>MGM Grand</td>
-                <td>Las Vegas</td>
+                <td rowspan="3">MGM Grand</td>
+                <td rowspan="4">Las Vegas</td>
                 <td>825,000</td>
             </tr>
             <tr>
                 <td>UFC 194</td>
                 <td>Aldo vs. McGregor</td>
-                <td>MGM Grand</td>
-                <td>Las Vegas</td>
                 <td>1,200,000</td>
             </tr>
             <tr>
                 <td>UFC 196</td>
                 <td>McGregor vs. Diaz</td>
-                <td>MGM Grand</td>
-                <td>Las Vegas</td>
                 <td>1,317,000</td>
             </tr>
             <tr>
                 <td>UFC 202</td>
                 <td>Diaz vs. McGregor</td>
                 <td>T-Mobile</td>
-                <td>Las Vegas</td>
                 <td>1,650,00</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
+                <!-- colspan is used to make a cell in a row cover multiple rows -->
                 <td colspan="4">Total Sales</td>
                 <td>4,992,000</td>
             </tr>
